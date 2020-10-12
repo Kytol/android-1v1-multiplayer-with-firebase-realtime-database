@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omistaja.firebasecountertest.PlayerOne">
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/gifTextView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hahmo1tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:text="Donald Trump"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hahmo1" />
+
+    <TextView
+        android:id="@+id/hahmo2tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:text="Kim Yong Un"
+        app:layout_constraintStart_toEndOf="@+id/hahmo1tv"
+        app:layout_constraintTop_toBottomOf="@+id/hahmo2" />
+
+    <TextView
+        android:id="@+id/hahmo3tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="2dp"
+        android:text="Pikachu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hahmo3" />
+
+    <TextView
+        android:id="@+id/hahmo4tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:text="Terminator Arnold"
+        app:layout_constraintStart_toEndOf="@+id/hahmo3tv"
+        app:layout_constraintTop_toBottomOf="@+id/hahmo4" />
+
+    <ImageView
+        android:id="@+id/hahmo1"
+        android:layout_width="130dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/donald_idle" />
+
+    <ImageView
+        android:id="@+id/hahmo2"
+        android:layout_width="130dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toEndOf="@+id/hahmo1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kim_idle" />
+
+    <ImageView
+        android:id="@+id/hahmo3"
+        android:layout_width="130dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hahmo1tv"
+        app:srcCompat="@drawable/pikachu_idle" />
+
+    <ImageView
+        android:id="@+id/hahmo4"
+        android:layout_width="130dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/hahmo3"
+        app:layout_constraintTop_toBottomOf="@+id/hahmo2tv"
+        app:srcCompat="@drawable/arnold_idle" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/gifTextView2"
+        android:layout_width="174dp"
+        android:layout_height="158dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/asdf"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/gifTextView3"
+        android:layout_width="240dp"
+        android:layout_height="236dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/kim_gif"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/winningTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ultimateImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/light_small3" />
+
+    <ImageView
+        android:id="@+id/ultimateAttack"
+        android:layout_width="91dp"
+        android:layout_height="62dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hahmo1_1"
+        app:layout_constraintTop_toTopOf="@+id/hahmo1_1"
+        app:srcCompat="@drawable/bomb1" />
+
+    <ImageView
+        android:id="@+id/ultimateAttack2"
+        android:layout_width="91dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="64dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hahmo2_1"
+        app:layout_constraintTop_toTopOf="@+id/hahmo2_1"
+        app:srcCompat="@drawable/bomb1" />
+
+    <ImageView
+        android:id="@+id/hahmo1_1"
+        android:layout_width="130dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hahmo1" />
+
+    <ImageView
+        android:id="@+id/hahmo2_1"
+        android:layout_width="130dp"
+        android:layout_height="164dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholder" />
+
+    <Button
+        android:id="@+id/attackButton"
+
+        android:layout_width="212dp"
+        android:layout_height="42dp"
+
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/attack_buttonshape"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+
+        android:shadowRadius="5"
+        android:text="Attack"
+
+        android:textColor="#FFFF44"
+
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/ultimateButton"
+        app:layout_constraintStart_toEndOf="@+id/hahmo1_1" />
+
+    <Button
+        android:id="@+id/ultimateButton"
+
+        android:layout_width="212dp"
+        android:layout_height="42dp"
+
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ultimate_buttonshape"
+
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Ultimate"
+
+        android:textColor="#FFFF44"
+
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/winningTV"
+        app:layout_constraintStart_toEndOf="@+id/hahmo1_1" />
+
+    <TextView
+        android:id="@+id/waitingTV"
+        android:layout_width="wrap_content"
+        android:layout_height="164dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Waiting for the other player"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/winningTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/winningTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Victory"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/health1TV"
+
+        android:layout_width="40dp"
+        android:layout_height="60px"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+
+        android:textAlignment="center"
+        android:textSize="20sp"
+
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toTopOf="@+id/mana1TV"
+        app:layout_constraintStart_toEndOf="@+id/hahmo1_1"
+        tools:text="HP" />
+
+    <TextView
+        android:id="@+id/health2TV"
+
+        android:layout_width="40dp"
+        android:layout_height="60px"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+
+        android:textSize="20sp"
+
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/HealthBar2"
+        app:layout_constraintTop_toTopOf="@+id/winningTV"
+        tools:text="HP" />
+
+    <TextView
+        android:id="@+id/mana1TV"
+
+        android:layout_width="40dp"
+        android:layout_height="60px"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+
+        android:textAlignment="center"
+        android:textSize="20sp"
+
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toTopOf="@+id/attackButton"
+        app:layout_constraintStart_toEndOf="@+id/hahmo1_1"
+        tools:text="MP" />
+
+    <TextView
+        android:id="@+id/mana2TV"
+
+        android:layout_width="40dp"
+        android:layout_height="60px"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+
+        android:textSize="20sp"
+
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/ManaBar2"
+        app:layout_constraintTop_toBottomOf="@+id/health2TV"
+        tools:text="MP" />
+
+    <com.example.omistaja.firebasecountertest.UIBarDraw
+        android:id="@+id/HealthBar1"
+        android:layout_width="350px"
+        android:layout_height="60px"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        app:bar_color="@color/health"
+        app:layout_constraintBottom_toTopOf="@+id/ManaBar1"
+        app:layout_constraintStart_toEndOf="@+id/health1TV" />
+
+    <com.example.omistaja.firebasecountertest.UIBarDraw
+        android:id="@+id/ManaBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        app:bar_color="@color/mana"
+        app:layout_constraintBottom_toTopOf="@+id/attackButton"
+        app:layout_constraintStart_toEndOf="@+id/mana1TV" />
+
+    <com.example.omistaja.firebasecountertest.UIBarDraw
+        android:id="@+id/HealthBar2"
+        android:layout_width="350px"
+        android:layout_height="60px"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:bar_color="@color/health"
+        app:layout_constraintEnd_toStartOf="@+id/hahmo2_1"
+        app:layout_constraintTop_toTopOf="@+id/winningTV" />
+
+    <com.example.omistaja.firebasecountertest.UIBarDraw
+        android:id="@+id/ManaBar2"
+        android:layout_width="350px"
+        android:layout_height="60px"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:bar_color="@color/mana"
+        app:layout_constraintEnd_toStartOf="@+id/hahmo2_1"
+        app:layout_constraintTop_toBottomOf="@+id/HealthBar2" />
+
+    <ImageView
+        android:id="@+id/manaImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mana2_small" />
+
+    <ImageView
+        android:id="@+id/mana_2ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mana2_small" />
+
+    <ImageView
+        android:id="@+id/mana5ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mana5_small" />
+
+    <ImageView
+        android:id="@+id/bonusHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/health_small" />
+
+</android.support.constraint.ConstraintLayout>
